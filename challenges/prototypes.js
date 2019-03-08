@@ -6,20 +6,40 @@
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
 
+class Parent {
+  
+  constructor(CuboidMaker) {
+    this.dimensions = CuboidMaker.dimensions;
+    this.surface = CuboidMaker.surface;
+    
+}
+surfaceArea() {
+  return  ${this.surface} 
+}
 
 /* == Step 2: Volume Method ==
   Create a method using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   
   Formula for cuboid volume: length * width * height
 */
-
-
+const cuboid = new Parent({
+  dimensions: {
+    length: 20,
+    width: 10,
+    height: 10,
+  }
 /* == Step 3: Surface Area Method ==
   Create another method using CuboidMaker's prototype that returns the surface area of a given cuboid's length, width, and height. 
 
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
-
+const cuboid = new Parent({
+  surface: {
+    length: 2,
+    width: 1,
+    height: 1,
+   
+  }
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
   Create a cuboid object that uses the new keyword to use our CuboidMaker constructor
