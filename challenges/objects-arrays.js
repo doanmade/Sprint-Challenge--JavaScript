@@ -84,25 +84,24 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
-for (let i = 0; i < graduates.length; i++) {
-  contactInfo.push(graduates[i].first_name, graduates[i].email);
+let contactPersone = graduates.forEach(function(i){
+  contactInfo.push(i.first_name + " " + i.email)
+  
+});
+  console.log(contactInfo);
 
-
-}
-
-console.log(contactInfo);
-
+ 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
-for (let i = 0; i < graduates.length; i++) {
-  if (graduates[i].university === "uni") {
-    uni.push(graduates[i]);
-  }
-}
+const uni = graduates.filter(university => graduates.university > "uni");
+
+// let uni = graduates.filter ((univer) => {
+//   return univer.university = "uni";
+// });
+
 console.log(uni);
 
-
+ 
 // ==== ADVANCED Array Methods ====
 
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
