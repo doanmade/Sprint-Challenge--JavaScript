@@ -108,19 +108,6 @@ for(let i = 0; i < graduates.length; i++){
     doSomething()
   }
 console.log(uni);
-
-// let univer = graduates.forEach(function(i){
-//   uni.push(i.university);
-// });
-
-console.log(uni.includes('uni'));
-
-// Stack.prototype.numOfItems = function() {
-//   if (this.storage.length === 0) {
-//     return `There are no items in your ${this.constructor.name}.`;
-//   }
-//   return this.storage.length;
-// };
  
 // ==== ADVANCED Array Methods ====
 
