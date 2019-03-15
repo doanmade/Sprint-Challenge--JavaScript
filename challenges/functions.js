@@ -20,7 +20,7 @@ function add(param1, param2) {
   return param1 + param2;
  
 }
-
+ 
 function multiply(param1, param2) {
   return param1 * param2;
  
@@ -42,7 +42,7 @@ console.log(consume("Mary","Poppins", greeting));
 // ==== Closures ==== 
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
-
+// - It can only go up one level and it has to be in the same block of code
 // Explanation: 
 
 
