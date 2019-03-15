@@ -96,13 +96,31 @@ let contactPersone = graduates.forEach(function(i){
  
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
-let univer = graduates.forEach(function(i){
-  uni.push(i.university);
-});
+
+const uni =[];
+
+for(let i = 0; i < graduates.length; i++){
+    function doSomething() {
+      if (graduates[i].university.includes('Uni')) {
+        uni.push(graduates[i].university);
+      }
+    }
+    doSomething()
+  }
+console.log(uni);
+
+// let univer = graduates.forEach(function(i){
+//   uni.push(i.university);
+// });
 
 console.log(uni.includes('uni'));
 
+// Stack.prototype.numOfItems = function() {
+//   if (this.storage.length === 0) {
+//     return `There are no items in your ${this.constructor.name}.`;
+//   }
+//   return this.storage.length;
+// };
  
 // ==== ADVANCED Array Methods ====
 
