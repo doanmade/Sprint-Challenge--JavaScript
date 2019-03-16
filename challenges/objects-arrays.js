@@ -17,7 +17,7 @@ const tyrannosaurus = {
     return noise;
   }
 }
-
+ 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 const stegosaurus = {
   name: "Stegosaurus",
@@ -96,13 +96,18 @@ let contactPersone = graduates.forEach(function(i){
  
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
-let univer = graduates.forEach(function(i){
-  uni.push(i.university);
-});
 
-console.log(uni.includes('uni'));
+const uni =[];
 
+for(let i = 0; i < graduates.length; i++){
+    function doSomething() {
+      if (graduates[i].university.includes('Uni')) {
+        uni.push(graduates[i].university);
+      }
+    }
+    doSomething()
+  }
+console.log(uni);
  
 // ==== ADVANCED Array Methods ====
 
